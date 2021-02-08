@@ -1,11 +1,11 @@
 {
-  "name": "@more/client",
+  "name": "@more/app",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "More <2495875335@qq.com>",
-  "homepage": "",
+  "homepage": "https://github.com/Moretai/frontend_arch#readme",
   "license": "ISC",
-  "main": "lib/client.js",
+  "main": "index.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -13,13 +13,23 @@
   "files": [
     "lib"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moretai/frontend_arch.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "start": "npx webpack serve"
+  },
+  "bugs": {
+    "url": "https://github.com/Moretai/frontend_arch/issues"
+  },
   "dependencies": {
     "@babel/core": "^7.12.13",
     "@babel/plugin-proposal-class-properties": "^7.12.13",
     "@babel/plugin-proposal-decorators": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
     "@babel/preset-react": "^7.12.13",
-    "@more/common": "0.0.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.1",
@@ -33,14 +43,5 @@
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.7.3"
-  },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
-    "start": "npx cross-env NODE_ENV=development APP_ENV=development npx webpack serve --config webpack.dev.config.js",
-    "dev:client": "npx cross-env NODE_ENV=development APP_ENV=development npx webpack serve --config webpack.dev.config.js"
-  },
-  "devDependencies": {
-    "webpack": "^5.21.2",
-    "webpack-dev-server": "^3.11.2"
   }
 }
